@@ -9,22 +9,20 @@ import {
   Pressable,
 } from "react-native";
 
-
-
 // <ImageBackground source={image} style={styles.image} />
-const Home = ({ navigation }) => {
+const Landing = ({ navigation }) => {
   return (
     <View style={styles.container}>
       <Button
         title="Register"
         onPress={() => navigation.navigate("Register")}
       />
-      {/* <Button title="Login" onPress={() => navigation.navigate("Login")} /> */}
+      <Button title="Login" onPress={() => navigation.navigate("Login")} />
     </View>
   );
 };
 
-export default Home;
+export default Landing;
 
 const styles = StyleSheet.create({
   container: {

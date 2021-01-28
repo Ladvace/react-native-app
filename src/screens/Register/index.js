@@ -13,7 +13,14 @@ const Register = ({ navigation }) => {
       const result = await firebase
         .auth()
         .createUserWithEmailAndPassword(email, password);
-
+      firebase
+        .firestore()
+        .collection("user")
+        .doc(firebase.auth().currentUser.uid)
+        .set({
+          name,
+          email,
+        });
       console.log("result", result);
     } catch (e) {
       console.error(e);

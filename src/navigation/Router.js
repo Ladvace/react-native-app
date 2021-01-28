@@ -2,7 +2,8 @@ import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import CountryList from "../screens/CountryList";
-import Home from "../screens/Home";
+import Landing from "../screens/Landing";
+// import Home from "../screens/Main";
 import Register from "../screens/Register";
 
 const Stack = createStackNavigator();
@@ -10,10 +11,10 @@ const Stack = createStackNavigator();
 const Router = (props) => {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="Home">
+      <Stack.Navigator initialRouteName="Landing">
         <Stack.Screen
-          name={"Home"}
-          component={Home}
+          name={"Landing"}
+          component={Landing}
           options={{
             headerShown: false,
           }}
@@ -25,7 +26,6 @@ const Router = (props) => {
             headerShown: false,
           }}
         />
-
         <Stack.Screen
           name={"Posts"}
           component={CountryList}

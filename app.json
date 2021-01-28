@@ -1,0 +1,17 @@
+{
+  "name": "expoReactNative",
+  "displayName": "expoReactNative",
+  "expo": {
+    "name": "expoReactNative",
+    "slug": "expoReactNative",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "assetExts": [
+    "ttf",
+    "mp4",
+    "png"
+  ]
+}

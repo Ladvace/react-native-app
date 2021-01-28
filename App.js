@@ -6,18 +6,24 @@ import { createStackNavigator } from "@react-navigation/stack";
 import HomeScreen from "./src/screens/Home";
 import Router from "./src/navigation/Router";
 import NavigationBar from "./src/components/NavigationBar";
+import * as firebase from "firebase";
 
 // <View style={styles.container}>
 //   <StatusBar style="auto" />
 //   <Router />
 //   <NavigationBar />
 // </View>
+
+const firebaseConfig = {};
+
+if (firebase.apps.length === 0) firebase.initializeApp(firebaseConfig);
+
 export default function App() {
   return (
     <>
       <StatusBar style="auto" />
       <Router />
-      <NavigationBar />
+      {/* <NavigationBar /> */}
     </>
   );
 }

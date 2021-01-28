@@ -23,7 +23,7 @@ const Card = (props) => {
   return (
     <View style={styles.cardContainer}>
       <Text>{props.name}</Text>
-      <Image style={styles.image} source={props.flag} />
+      {/* <Image style={styles.image} source={props.flag} /> */}
     </View>
   );
 };
